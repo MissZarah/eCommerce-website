@@ -1,0 +1,190 @@
+@font-face{
+  font-family: 'Amatic SC', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+}
+
+html{font-size: 100%;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+#container {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    margin-bottom: 20px;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "content content content"
+    "footer footer footer"
+}
+
+header{
+    grid-area: header;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+footer {
+  grid-area: footer;
+  margin-top: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.5rem;
+}
+
+
+nav {
+  grid-area: nav;
+  text-align: right;
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav li{
+  display: inline;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-right: 30px;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover, a:focus{
+  color: #ad5497;
+  transition: color 1s;
+}
+
+a.active{color: #ad5497;}
+
+main {
+  grid-area: content;
+  margin-top: 30px; 
+}
+
+.columns {
+ 
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.columns {
+  float: none !important;
+}
+#underLine {
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color:rgb(119, 119, 119);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 80%;
+}
+
+#cart {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#removeButton {
+  margin-top: 20px;
+  padding: 6px;
+}
+
+.messageBox {
+  padding: 10px;
+  margin-top: 10px;
+ text-align: center;
+ font-weight: bold;
+ color: rgb(104, 196, 104);
+}
+
+.quantity {
+  margin-top: 30px;
+}
+
+#längstupp{
+ box-sizing: border-box;
+ background-color: #008CBA;
+ font-family:verdana,sans-serif;
+ width: 90%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 100px;
+ padding: 20px;
+ text-align: center;
+ font-size: 25px;
+ color: white;
+}
+
+input[type=text] {
+  width: 30rem;
+  margin-left: auto;
+  margin-right:auto ;
+}
+
+input[type=password] {
+  width: 30rem;
+  margin-left: auto;
+  margin-right:auto ;
+}
+
+#rubrik1{
+    font-family: Times New Roman, Times, serif;
+    margin-left: 125px;
+    margin-right: auto;
+    text-align:left;
+}
+
+#översikt {
+    margin-left: 125px;
+    margin-right: 125px;
+    text-align: left;
+    border-style: inset;
+    border-color: #c0e4fd;
+    border-radius: 5px;
+
+
+}
+span {
+    display: block;
+    font-family: Times New Roman, Times, serif;
+    text-indent: 20px;
+    background-color: #fde2c0;
+}
+
+
+#betalningsuppgifter{
+    border-style: ridge;
+    margin-bottom: 90px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: pedana;
+    background-color: #c0e4fd;
+}
+
+img{
+    background: white url("delivery.png") no-repeat right top;
+    margin-right: 200px;
+}
