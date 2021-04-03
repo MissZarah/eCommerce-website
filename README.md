@@ -37,7 +37,7 @@ Include /Applications/MAMP/conf/apache/extra/httpd-ssl.conf
 ```
 <VirtualHost *:443>
 
-#   General setup for the virtual host
+# General setup for the virtual host
 DocumentRoot "/Applications/MAMP/htdocs"
 ServerName localhost:443
 ```
